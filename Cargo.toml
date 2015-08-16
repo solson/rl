@@ -1,0 +1,8 @@
+[package]
+name = "rl"
+version = "0.1.0"
+authors = ["Scott Olson <scott@solson.me>"]
+
+[dependencies]
+libc = "0.1.8"
+llvm_sys = "0.2.0"
