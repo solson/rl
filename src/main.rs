@@ -29,7 +29,7 @@ fn compile_expr(expr: parser::Expr) {
 
     unsafe {
         let context = LLVMContextCreate();
-        let module = LLVMModuleCreateWithName(c_str!("rl"));
+        let module = LLVMModuleCreateWithNameInContext(c_str!("rl"), context);
         let builder = LLVMCreateBuilderInContext(context);
 
         let i64_type = LLVMInt64TypeInContext(context);
